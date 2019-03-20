@@ -1,0 +1,23 @@
+{% extends '@content/page.twig' %}
+
+{% block onload %}
+    $('#alert').on('click', function(){
+        bootbox.alert('Hello World')
+    })
+{% endblock onload %}
+
+{% block header %}
+    <section class="col-md-12 mt-5">
+        <h1 class="cntr">KEY ALLOCATION</h1>
+    </section>
+{% endblock header %}
+
+{% block main %}
+    <section class="row">
+        <article class="col-md-8">
+            <div class="jumbotron">
+				<p>This is the key allocation system. Please select an action via the navigation bar.</p>
+            </div>
+        </article>
+    </section>
+{% endblock main %}
